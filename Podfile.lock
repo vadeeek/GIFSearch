@@ -1,0 +1,20 @@
+PODS:
+  - JellyGif (1.0.2)
+  - SnapKit (5.6.0)
+
+DEPENDENCIES:
+  - JellyGif
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - JellyGif
+    - SnapKit
+
+SPEC CHECKSUMS:
+  JellyGif: 52b7569b7015f3b1ab2a6be30e4a81d47f974c97
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+
+PODFILE CHECKSUM: 60ab7f3152676d1430adb0d2bc0346739a64243b
+
+COCOAPODS: 1.11.3
