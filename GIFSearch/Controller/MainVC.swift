@@ -46,7 +46,9 @@ final class MainVC: UIViewController {
         for gif in gifArray {
             apiManager.fetchGifBy(url: gif.getGifURL()) { gifData in
                 self.gifData.append(gifData)
-                self.mainView.gifCollectionView.reloadData()
+                if gifData.count >= requestLimit {
+                    self.mainView.gifCollectionView.reloadData()
+                }
             }
         }
     }
@@ -64,7 +66,6 @@ extension MainVC: UISearchResultsUpdating {
                 gifArray.removeAll()
                 gifData.removeAll()
                 searchGifs(by: text)
-                mainView.gifCollectionView.reloadData()
             })
         } else {
             gifArray.removeAll()
